@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+/* ═══════════════════════════════════════════════════════
+   LUMINA — Design System v3: Premium Cream & Espresso
+   Skills: taste, impeccable, huashu-design, ui-ux-pro-max
+   
+   Typography: Cormorant Garamond (editorial display) + Inter (body)
+   Palette: Warm Cream — nude, taupe, espresso, bronze
+   Spacing: 4pt grid system (impeccable rule)
+   Border-radius scale: 0 / 4 / 8 / 12 / 16 / 9999 (pill)
+   
+   Key principle: White is sterile. Ethereal Cream paired
+   with deep Espresso feels organic, tactile, and highly
+   expensive.
+   ═══════════════════════════════════════════════════════ */
+
+@theme {
+  /* ─── Color System: Warm Cream & Espresso ─── */
+  /* Deeper, richer cream base */
+  --color-page: hsl(42, 35%, 94%);
+  --color-surface: hsl(40, 25%, 91%);
+  --color-linen: hsl(38, 20%, 88%);
+  
+  /* Muted midtones */
+  --color-taupe: hsl(30, 15%, 65%);
+  --color-drift: hsl(28, 12%, 50%);
+  
+  /* Rich, warm darks (Espresso/Bark) instead of stark black */
+  --color-graphite: hsl(25, 15%, 32%);
+  --color-bark: hsl(20, 20%, 20%);
+  --color-deep: hsl(15, 25%, 12%);
+
+  /* Accent: rich bronze — grounded, architectural */
+  --color-bronze: hsl(25, 45%, 38%);
+  --color-bronze-light: hsl(25, 35%, 52%);
+
+  /* Borders: warm and soft */
+  --color-hairline: hsl(30, 20%, 84%);
+  --color-hairline-dark: hsl(30, 15%, 75%);
+
+  /* ─── Typography ─── */
+  --font-editorial: "Cormorant Garamond", "Georgia", serif;
+  --font-body: "Inter", system-ui, sans-serif;
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: var(--color-page);
+    color: var(--color-deep);
+    font-family: var(--font-body);
+    font-size: 15px;
+    line-height: 1.6;
+    font-weight: 400;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: var(--color-bronze);
+    color: var(--color-page);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-editorial);
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    color: var(--color-deep);
+  }
+}
+
+@layer components {
+  .divider {
+    width: 48px;
+    height: 1px;
+    background: var(--color-bronze);
+    border: none;
+  }
+
+  .canvas-frame {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .canvas-frame canvas {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .will-change-transform {
+    will-change: transform;
+  }
+}
