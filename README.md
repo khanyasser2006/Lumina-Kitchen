@@ -140,7 +140,7 @@ http://localhost:5173
 
 ---
 
-## 🎥 Demo
+## 🎥 Video
 
 *Add a screen recording of the hero scroll here — 600 frames of scrubbing is the one thing a still screenshot can't show.*
 
