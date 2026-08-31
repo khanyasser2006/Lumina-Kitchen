@@ -142,6 +142,9 @@ http://localhost:5173
 
 ## 🎥 Video
 
-*Add a screen recording of the hero scroll here — 600 frames of scrubbing is the one thing a still screenshot can't show.*
+
+
+https://github.com/user-attachments/assets/3784ee9f-192c-4de1-96cf-d19371784461
+
 
 ---
